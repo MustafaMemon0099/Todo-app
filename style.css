@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #111;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.container {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #2ecc71;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-section input:focus {
+  border-color: #2ecc71;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Task item */
+#taskList li {
+  background: #2a2a2a;
+  margin: 6px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#taskList li:hover {
+  background: #333;
+  transform: translateX(3px);
+}
+
+/* Add button */
+#addBtn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: #444;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#addBtn:hover {
+  background: #666;
+  transform: scale(1.05);
+}
+
+#addBtn:active {
+  background: #222;
+  transform: scale(0.95);
+}
+
+/* Delete button */
+.delete {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Edit button */
+.edit {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.edit:hover {
+  background: #217dbb;
+  transform: scale(1.05);
+}
