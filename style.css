@@ -12,14 +12,15 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 30px;
+  padding: 20px;
 }
 
 .container {
   background: #1c1c1c;
-  padding: 25px;
+  padding: 20px;
   border-radius: 12px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease;
 }
@@ -136,4 +137,36 @@ ul {
 .edit:hover {
   background: #217dbb;
   transform: scale(1.05);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section input {
+    width: 100%;
+  }
+
+  #addBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #taskList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
