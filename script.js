@@ -11,7 +11,7 @@ li.textContent = input.value;
 list.appendChild(li);
 input.value = "";
 const delBtn = document.createElement("button");
-delBtn.textContent = "🔴";
+delBtn.textContent = "❌";
 delBtn.classList.add("delete");
 
 const editBtn = document.createElement("button");
